@@ -197,8 +197,18 @@ body {
 .footer-contacts-address-phone{
     font-family: "PT Sans",sans-serif;
     text-decoration: none;
+    font-style: normal;
     color: #000000;
     text-transform: uppercase;
     font-size: 40px;
     line-height: 40px;
+}
+.footer-contacts-address-phone:hover{
+    color: rgba(117, 97, 87, 1);
+}
+.footer-contacts-address-phone:focus{
+    color: rgba(117, 97, 87, 1);
+}
+.footer-contacts-address-phone:active{
+    color: rgba(117, 97, 87, 0.3);
 }
