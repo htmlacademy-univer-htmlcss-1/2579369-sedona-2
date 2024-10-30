@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
     <header class="main-page-header">
@@ -29,16 +30,14 @@
         </span>
         <img src="#" class="navigation-image" alt="понравившиеся"></a></li>
         <li class="navigation-item">
-          <a href="#" class="navigation-link">
-            <span class="visually-hidden">
+          <button type="button" class="navigation-button">
           Хочу сюда!
-        </span></a></li>
+          </button></li>
       </ul>
     </header>
     <main class="main-page-index">
       <h1 class="visually-hidden">Sedona</h1>
       <section class="welcome-image">
-        <img src="#" height="485" width="1200" class="background-image" alt="welcome фон">
         <img src="#" alt="текст">
         <img src="#" alt="текст">
         <img src="#" alt="текст">
@@ -50,7 +49,7 @@
         <p class="advantages-reasons">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         </header>
         <ul class="advantages-list">
-          <li class="advatages-item">
+          <li class="advatages-item bright">
             <h3 class="advantages-strong">Настоящий городок</h3>
             <p class="advantages">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
             <img class="advantages-image" src="images/index-page/city.jpg" height="385" width="800" alt="Вид на город">
@@ -60,7 +59,7 @@
             площадь</h3>
             <p class="advantages">Все достопримечательности находятся очень близко</p>
           </li>
-          <li class="advatages-item">
+          <li class="advatages-item center">
             <h3 class="advantages-strong">Красивая
             дорога</h3>
             <p class="advantages">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
@@ -70,7 +69,7 @@
             туристов</h3>
             <p class="advantages">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
-          <li class="advatages-item">
+          <li class="advatages-item bright">
             <img class="advantages-image" src="images/index-page/devil-bridge.jpg" height="385" width="800" alt="Мост Дьявола"
             ><h3 class="advantages-strong">Там есть
               мост дьявола</h3>
@@ -107,15 +106,14 @@
           <h2 class="want-search-title">Заинтересовались?</h2>
           <p class="want-search-first-information">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         </header>
-        <a href="catalog.html" class="want-search-link">поиск гостиницы в седоне</a>
+        <a href="catalog.html" class="want-search-link navigation-button">поиск гостиницы в седоне</a>
       </section>
       <section class="subscribe">
         <h2 class="visually-hidden">Подписка</h2>
-        <img src="images/index-page/subscribe.jpg" width="1200" height="414,86" class="subscribe-background" alt="горы">
         <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
         <p class="subscribe-information">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscribe-form"  action="https://echo.htmlacademy.ru/" method="get">
-          <input name="email" type="email" value="Ваш e-mail">
+          <input class="email" name="email" type="email" value="Ваш e-mail">
           <button class="subscribe-buttom" type="submit">Подписаться</button>
         </form>
       </section>
