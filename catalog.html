@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
-    <header class="catalog-header">
+    <header class="page-header">
         <nav class="navigation">
           <a href="index.html" class="navigation-link"><img class="logo image" src="images/header/logo.svg" height="64" width="138" alt="Лого Седоны"></a>
           <ul class="navigation-list">
@@ -16,14 +16,17 @@
             <li class="navigation-item"><a class="navigation-link current">Гостиницы</a></li>
           </ul>
           <ul class="navigation-list-user">
-            <li class="navigation-item"><a href="#" class="navigation-link"><span class="visually-hidden">
+            <li class="navigation-item"><a href="#" class="navigation-link">
+              <span class="visually-hidden">
               Поиск
-            </span></a></li>
+            </span>
+            <img src="images/header/search.svg" class="navigation-image" alt="поиск"></a></li>
             <li class="navigation-item"><a href="#" class="navigation-link"><span class="visually-hidden">
               Понравившиеся
-            </span></a></li>
+            </span>
+            <img src="images/header/heart.svg" class="navigation-image" alt="понравившиеся"></a></li>
             <li class="navigation-item">
-              <button type="button" class="navigation-button">
+              <button type="button" class="button">
               Хочу сюда!
               </button></li>
           </ul>
@@ -38,29 +41,29 @@
                     <li class="breadcrumbs-items"><a class="breadcrumbs-link">Гостиницы</a></li>
                 </ul>
                 <fieldset>
-                <legend class="infastructure-title ">Инфаструктура</legend>
+                <legend class="parametr-minititle ">Инфаструктура</legend>
                 <ul class="infastructure">
-                    <li class="infastructure-items"> <input class="infastructure-checkbox" type="checkbox" id="pool"><label  class="infastructure-label" for="pool">Бассейн</label></li>
-                    <li class="infastructure-items"> <input class="infastructure-checkbox" type="checkbox" id="parking"><label  class="infastructure-label" for="parking">Парковка</label></li>
-                    <li class="infastructure-items"> <input class="infastructure-checkbox" type="checkbox" id="wi-fi"><label  class="infastructure-label" for="wi-fi">Wi-Fi</label></li>
+                    <li class="parametr-items"> <input class="infastructure-checkbox" type="checkbox" id="pool"><label  class="infastructure-label" for="pool">Бассейн</label></li>
+                    <li class="parametr-items"> <input class="infastructure-checkbox" type="checkbox" id="parking"><label  class="infastructure-label" for="parking">Парковка</label></li>
+                    <li class="parametr-items"> <input class="infastructure-checkbox" type="checkbox" id="wi-fi"><label  class="infastructure-label" for="wi-fi">Wi-Fi</label></li>
 
                 </ul>
                 </fieldset>
                 <fieldset>
-                <legend class="type-of-house ">Инфаструктура</legend>
+                <legend class="parametr-minititle ">Тип Жилья</legend>
                 <ul class="types">
-                    <li class="types-items"><label class="types-label"><input type="radio" name="type" value="Hotels" class="types-radio">Гостиница</label></li>
-                    <li class="types-items"><label class="types-label"><input type="radio" name="type" value="Motel" class="types-radio">Мотель</label></li>
-                    <li class="types-items"><label class="types-label"><input type="radio" name="type" value="Appartaments" class="types-radio">Апартаменты</label></li>
+                    <li class="parametr-items"><label class="types-label"><input type="radio" name="type" value="Hotels" class="types-radio">Гостиница</label></li>
+                    <li class="parametr-items"><label class="types-label"><input type="radio" name="type" value="Motel" class="types-radio">Мотель</label></li>
+                    <li class="parametr-items"><label class="types-label"><input type="radio" name="type" value="Appartaments" class="types-radio">Апартаменты</label></li>
 
                 </ul>
             </fieldset>
                 <section class="cost">
-                    <h3 class="cost-title">Стоимость, ₽:</h3>
+                    <h3 class="parametr-minititle">Стоимость, ₽:</h3>
 
                 </section>
-                <button class="button" type="submit">Применить</button>
-                <button class="button" type="submit">Сбросить</button>
+                <button class="action-button use" type="submit">Применить</button>
+                <button class="background-button" type="submit">Сбросить</button>
             </section>
         </header>
 
@@ -73,13 +76,13 @@
                     <option value="popular">Сначала популярные</option>
                     <option value="expensive">Сначала дорогие</option>
                 </select>
-                <a href="#" class="button button-light">
+                <a href="#" class="show selected">
                     <span class="visually-hidden">Показать карточки</span>
                   </a>
-                  <a class="button" href="#">
+                  <a class="show" href="#">
                     <span class="visually-hidden">Показать одну карточку</span>
                   </a>
-                  <a class="button" href="#">
+                  <a class="show" href="#">
                     <span class="visually-hidden">Показать список</span>
                   </a>
             </section>
@@ -88,17 +91,17 @@
                     <img class="card-image" src="images/catalog/hotel-1.jpg" height="212" width="300" alt=" отель Амара Ресорт и СПА">
                     <h3 class="card-name">Amara Resort & Spa</h3>
                     <p class="card-information">Гостиница</p>
-                    <p class="card-cost">От 4000 ₽</p>
+                    <p class="card-information">От 4000 ₽</p>
                 </a>
-                <a class="card-button" href="#">подробнее</a>
-                <button class="card-button" type="submit">в избранное</button>
+                <a class="button" href="#">подробнее</a>
+                <button class="action-button choose" type="submit">в избранное</button>
                 <section class="hotel-rate">
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star"></span>
-                    <p class="card-rate-text">Рейтинг: 8,5</p>
+                    <p class="card-rate">Рейтинг: 8,5</p>
                 </section>
 
             </section>
@@ -107,17 +110,17 @@
                     <img class="card-image" src="images/catalog/hotel-2.jpg" height="212" width="300" alt=" отель Villas at Poco Diablo">
                     <h3 class="card-name">Villas at Poco Diablo</h3>
                     <p class="card-information">Гостиница</p>
-                    <p class="card-cost">От 5000 ₽</p>
+                    <p class="card-information">От 5000 ₽</p>
                 </a>
-                <a class="card-button" href="#">подробнее</a>
-                <button class="card-button" type="submit">в избранное</button>
+                <a class="button" href="#">подробнее</a>
+                <button class="action-button choosen" type="submit">в избранном</button>
                 <section class="hotel-rate">
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star"></span>
-                    <p class="card-rate-text">Рейтинг: 9,2</p>
+                    <p class="card-rate">Рейтинг: 9,2</p>
                 </section>
 
             </section>
@@ -126,17 +129,17 @@
                     <img class="card-image" src="images/catalog/hotel-3.jpg" height="212" width="300" alt=" отель Desert Quail Inn">
                     <h3 class="card-name">Desert Quail Inn</h3>
                     <p class="card-information">Гостиница</p>
-                    <p class="card-cost">От 2500 ₽</p>
+                    <p class="card-information">От 2500 ₽</p>
                 </a>
-                <a class="card-button" href="#">подробнее</a>
-                <button class="card-button" type="submit">в избранное</button>
+                <a class="button" href="#">подробнее</a>
+                <button class="action-button choose" type="submit">в избранное</button>
                 <section class="hotel-rate">
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star"></span>
                     <span class="fa fa-star"></span>
-                    <p class="card-rate-text">Рейтинг: 6,9</p>
+                    <p class="card-rate">Рейтинг: 6,9</p>
                 </section>
 
             </section>
@@ -145,17 +148,17 @@
                     <img class="card-image" src="images/catalog/hotel-4.jpg" height="212" width="300" alt=" отель GreenTree Inn">
                     <h3 class="card-name">GreenTree Inn</h3>
                     <p class="card-information">Гостиница</p>
-                    <p class="card-cost">От 1500 ₽</p>
+                    <p class="card-information">От 1500 ₽</p>
                 </a>
-                <a class="card-button" href="#">подробнее</a>
-                <button class="card-button" type="submit">в избранное</button>
+                <a class="button" href="#">подробнее</a>
+                <button class="action-button choose" type="submit">в избранное</button>
                 <section class="hotel-rate">
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star"></span>
                     <span class="fa fa-star"></span>
                     <span class="fa fa-star"></span>
-                    <p class="card-rate-text">Рейтинг: 5,0</p>
+                    <p class="card-rate">Рейтинг: 5,0</p>
                 </section>
 
 
@@ -187,7 +190,7 @@
                   </li>
                   <li class="pagination-item">
                     <a class="pagination-link">
-                      <span class="page-number-else">...</span>
+                      <span class="current-page">...</span>
                     </a>
                   </li>
                   <li class="pagination-item">
@@ -199,13 +202,13 @@
 
         </section>
 
-          <section class="subscribe">
+          <section class="subscribe-catalog">
             <h2 class="visually-hidden">Подписка</h2>
             <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
             <p class="subscribe-information">Только полезная информация и никакого спама, честное бойскаутское!</p>
             <form class="subscribe-form"  action="https://echo.htmlacademy.ru/" method="get">
-              <input name="email" type="email" value="Ваш e-mail">
-              <button class="subscribe-buttom" type="submit">Подписаться</button>
+              <input class="email" name="email" type="email" value="Ваш e-mail">
+              <button class="action-button subscr" type="submit">Подписаться</button>
             </form>
           </section>
       </main>
@@ -213,15 +216,15 @@
         <section class="information">
           <h2 class="visually-hidden">Контактные данные</h2>
           <ul class="footer-socials">
-            <li class="footer-socials-items"><a class="button" href="https://vk.com/htmlacademy"><img src="images/footer/Vk.svg" width="24" height="14" alt="Иконка Вконтакте">
+            <li class="footer-socials-items"><a class="social" href="https://vk.com/htmlacademy"><img src="images/footer/Vk.svg" width="24" height="14" alt="Иконка Вконтакте">
               <span class="visually-hidden">Вконтакте</span>
             </a>
           </li>
-            <li class="footer-socials-items"><a class="button" href="https://t.me/htmlacademy"><img src="images/footer/Telegram.svg" width="18" height="15,1" alt="Иконка Телеграмм">
+            <li class="footer-socials-items"><a class="social" href="https://t.me/htmlacademy"><img src="images/footer/Telegram.svg" width="18" height="15,1" alt="Иконка Телеграмм">
               <span class="visually-hidden">Телеграмм</span>
             </a>
             </li>
-            <li class="footer-socials-items"><a class="button" href="https://www.youtube.com/user/htmlacademyru"><img src="images/footer/YouTube.svg" width="22" height="17" alt="Иконка Ютуб">
+            <li class="footer-socials-items"><a class="social" href="https://www.youtube.com/user/htmlacademyru"><img src="images/footer/YouTube.svg" width="22" height="17" alt="Иконка Ютуб">
               <span class="visually-hidden">Ютуб</span>
             </a>
             </li>
