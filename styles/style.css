@@ -140,7 +140,11 @@ body {
     text-align: center;
     width:1200px
 }
-
+.advantages-list{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+}
 .advatages-item{
     display:flex;
     padding: 0;
@@ -489,6 +493,7 @@ body {
     height: 60px;
 }
 .pagination-item{
+    display: block;
     padding: 0;
     text-align:center;
     width: 60px;
