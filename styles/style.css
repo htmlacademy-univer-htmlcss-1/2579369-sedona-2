@@ -487,25 +487,21 @@ body {
     display: flex;
     width: 1060px;
     height: 60px;
-    margin-right: auto;
 }
 .pagination-item{
     padding: 0;
     text-align:center;
-    justify-content: center;
     width: 60px;
     margin-right:8px ;
-    height: 60px;
     background-color: #82B3D3;
 }
 
 .pagination-link{
-    margin: 12px;
-    width: 60px;
     color: #000;
     font-size: 20px;
     line-height: 36px;
     font-weight: 700;
+    text-align:center;
     text-decoration: none;
 }
 .current-page{
@@ -514,8 +510,6 @@ body {
 }
 .page-number{
     text-align: center;
-    height: 60px;
-    width:60px;
     margin: 0 auto;
     color: #FFF;
     background-color: #82B3D3;
