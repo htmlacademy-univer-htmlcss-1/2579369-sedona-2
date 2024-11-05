@@ -142,14 +142,6 @@ body {
     width:651px;
     margin: 0 auto;
 }
-.advantages-flex{
-    display: flex;
-    justify-content: space-between;
-    margin:0;
-    padding:0;
-    text-align: center;
-    width:1200px
-}
 .advantages-list{
     display: flex;
     flex-wrap: wrap;
@@ -460,17 +452,14 @@ body {
     line-height: 21px;
 }
 .catalog-block{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3,340px);
+    gap: 20px;
     width:1060px;
-    margin: 0 auto;
+    margin: 40px auto;
     padding: 0;
-    justify-content: space-between ;
 }
-.card{
-    padding: 20px;
-    max-width: 340px;
-}
+
 .product-card-link{
     text-decoration: none;
 }
