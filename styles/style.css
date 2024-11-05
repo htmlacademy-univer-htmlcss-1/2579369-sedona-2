@@ -14,6 +14,7 @@
 }
 html{
     height: 100%;
+
 }
 
 body {
@@ -25,15 +26,24 @@ body {
     font-size: 22x;
     line-height: 26px;
     color:#333;
-    background-color: #FFF;
+    background-color: rgba(242, 242, 242, 1);
 }
 .main-container{
     flex-grow: 1;
+    width: 1200px;
+    margin: 0 auto;
+    background-color:#FFF;
 }
-
+.page-container{
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #FFF;
+}
 .page-header{
     color:#333;
     background-color:#FFF;
+    width: 1200px;
+    margin: 0 auto;
 }
 .navigation{
     display: flex;
@@ -297,6 +307,8 @@ body {
 
 .footer-page{
     background-color: #FFF;
+    width: 1200px;
+    margin: 0 auto;
     color:#000;
     text-align: center;
     text-decoration: none;
@@ -384,6 +396,8 @@ body {
     display: flex;
 }
 .parametrs-title{
+    padding: 0;
+    margin: 0;
     font-size: 60px;
     line-height: 78px;
 }
