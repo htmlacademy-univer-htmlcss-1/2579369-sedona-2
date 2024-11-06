@@ -14,6 +14,7 @@
 }
 html{
     height: 100%;
+
 }
 
 body {
@@ -25,15 +26,24 @@ body {
     font-size: 22x;
     line-height: 26px;
     color:#333;
-    background-color: #FFF;
+    background-color: rgba(242, 242, 242, 1);
 }
 .main-container{
     flex-grow: 1;
+    width: 1200px;
+    margin: 0 auto;
+    background-color:#FFF;
 }
-
+.page-container{
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #FFF;
+}
 .page-header{
     color:#333;
     background-color:#FFF;
+    width: 1200px;
+    margin: 0 auto;
 }
 .navigation{
     display: flex;
@@ -132,14 +142,6 @@ body {
     width:651px;
     margin: 0 auto;
 }
-.advantages-flex{
-    display: flex;
-    justify-content: space-between;
-    margin:0;
-    padding:0;
-    text-align: center;
-    width:1200px
-}
 .advantages-list{
     display: flex;
     flex-wrap: wrap;
@@ -167,6 +169,9 @@ body {
 .item-text{
     flex-direction: column;
     width: 400px;
+}
+.advantages-list{
+    padding: 0;
 }
 
 .advantages-strong{
@@ -203,6 +208,7 @@ body {
 .comfort-list{
     display: flex;
     width:1200px;
+    padding: 0;
 }
 .comfort-item{
     background-color:#FFF;
@@ -293,6 +299,8 @@ body {
 
 .footer-page{
     background-color: #FFF;
+    width: 1200px;
+    margin: 0 auto;
     color:#000;
     text-align: center;
     text-decoration: none;
@@ -380,6 +388,8 @@ body {
     display: flex;
 }
 .parametrs-title{
+    padding: 0;
+    margin: 0;
     font-size: 60px;
     line-height: 78px;
 }
@@ -442,17 +452,14 @@ body {
     line-height: 21px;
 }
 .catalog-block{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3,340px);
+    gap: 20px;
     width:1060px;
-    margin: 0 auto;
+    margin: 40px auto;
     padding: 0;
-    justify-content: space-between ;
 }
-.card{
-    padding: 20px;
-    max-width: 340px;
-}
+
 .product-card-link{
     text-decoration: none;
 }
