@@ -8,39 +8,48 @@
   </head>
   <body>
     <header class="page-header">
-        <nav class="navigation">
-          <a href="index.html" class="navigation-link"><img class="logo image" src="images/header/logo.svg" height="64" width="138" alt="Лого Седоны"></a>
-          <ul class="navigation-list">
-            <li class="navigation-item"><a href="#" class="navigation-link">Главная</a></li>
-            <li class="navigation-item"><a href="#" class="navigation-link">О седоне</a></li>
-            <li class="navigation-item"><a class="navigation-link current">Гостиницы</a></li>
-          </ul>
-          <ul class="navigation-list-user">
-            <li class="navigation-item"><a href="#" class="navigation-link">
-              <span class="visually-hidden">
-              Поиск
-            </span>
-            <img src="images/header/search.svg" class="navigation-image" alt="поиск"></a></li>
-            <li class="navigation-item"><a href="#" class="navigation-link"><span class="visually-hidden">
-              Понравившиеся
-            </span>
-            <img src="images/header/heart.svg" class="navigation-image" alt="понравившиеся"></a></li>
-            <li class="navigation-item">
-              <button type="button" class="button">
-              Хочу сюда!
-              </button></li>
-          </ul>
-        </nav>
-      </header>
+      <nav class="navigation">
+        <a class="navigation-link">
+          <img class="logo image" src="images/header/logo.svg" height="64" width="138" alt="Лого Седоны"></a>
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a href="#" class="navigation-link">Главная</a></li>
+          <li class="navigation-item">
+            <a href="#" class="navigation-link">О седоне</a></li>
+          <li class="navigation-item">
+            <a href="#" class="navigation-link">Гостиницы</a></li>
+        </ul>
+
+        <ul class="navigation-list navigation-user">
+          <li class="navigation-item"><a href="#" class="navigation-link">
+            <span class="visually-hidden">
+            Поиск
+          </span>
+          <img src="images/header/search.svg" class="navigation-image" alt="поиск"></a></li>
+          <li class="navigation-item"><a href="#" class="navigation-link"><span class="visually-hidden">
+            Понравившиеся
+          </span>
+          <img src="images/header/heart.svg" class="navigation-image" alt="понравившиеся"></a></li>
+          <li class="navigation-item">
+            <button type="button" class="button">
+            Хочу сюда!
+            </button></li>
+        </ul>
+    </nav>
+    </header>
       <main class="main-catalog">
-        <header><h1 class="visually-hidden">Каталог гостиниц</h1>
+        <div class="page-container">
+        <header><h1 class="visually-hidden" hidden>Каталог гостиниц</h1>
             <section class="parametrs">
+              <div class="parametrs-header">
                 <h2 class="parametrs-title">Гостиницы Седоны</h2>
                 <ul class="breadcrumbs">
-                    <li class="breadcrumbs-items"><a href="index.html" class="breadcrumbs-link"><img src="#" alt="главная страница"></a></li>
+                    <li class="breadcrumbs-items"><a href="index.html" class="breadcrumbs-link"><img src="images/catalog/breadcrumbs-house.svg" alt="главная страница"></a></li>
                     <li class="breadcrumbs-items"><a class="breadcrumbs-link">Гостиницы</a></li>
                 </ul>
-                <fieldset>
+              </div>
+              <div class="parametrs-choose">
+                <fieldset class="infastructure-block">
                 <legend class="parametr-minititle ">Инфаструктура</legend>
                 <ul class="infastructure">
                     <li class="parametr-items"> <input class="infastructure-checkbox" type="checkbox" id="pool"><label  class="infastructure-label" for="pool">Бассейн</label></li>
@@ -49,7 +58,7 @@
 
                 </ul>
                 </fieldset>
-                <fieldset>
+                <fieldset class="home-block">
                 <legend class="parametr-minititle ">Тип Жилья</legend>
                 <ul class="types">
                     <li class="parametr-items"><label class="types-label"><input type="radio" name="type" value="Hotels" class="types-radio">Гостиница</label></li>
@@ -62,12 +71,15 @@
                     <h3 class="parametr-minititle">Стоимость, ₽:</h3>
 
                 </section>
+
                 <button class="action-button use" type="submit">Применить</button>
                 <button class="background-button" type="submit">Сбросить</button>
+              </div>
             </section>
         </header>
 
         <section class="catalog-hotels">
+          <div class="page-container">
             <h2 class="visually-hidden">Список гостиниц</h2>
             <section class="top-of-sort">
                 <h3 class="result-of-search">Найдено гостиниц: 38</h3>
@@ -86,6 +98,7 @@
                     <span class="visually-hidden">Показать список</span>
                   </a>
             </section>
+            <div class="catalog-block">
             <section class="card">
                 <a class="product-card-link" href="#">
                     <img class="card-image" src="images/catalog/hotel-1.jpg" height="212" width="300" alt=" отель Амара Ресорт и СПА">
@@ -163,12 +176,13 @@
 
 
             </section>
+            </div>
         </section>
 
         <section class="choose-pages">
             <h2 class="visually-hidden">Пагинация</h2>
             <ul class="pagination">
-                <li class="pagination-item">
+                <li class="pagination-item current-page">
                     <a class="pagination-link">
                       <span class="current-page">1</span>
                     </a>
@@ -188,7 +202,7 @@
                       <span class="page-number">4</span>
                     </a>
                   </li>
-                  <li class="pagination-item">
+                  <li class="pagination-item current-page">
                     <a class="pagination-link">
                       <span class="current-page">...</span>
                     </a>
@@ -203,6 +217,7 @@
         </section>
 
           <section class="subscribe-catalog">
+            <div class="subsribe-filling">
             <h2 class="visually-hidden">Подписка</h2>
             <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
             <p class="subscribe-information">Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -210,26 +225,28 @@
               <input class="email" name="email" type="email" value="Ваш e-mail">
               <button class="action-button subscr" type="submit">Подписаться</button>
             </form>
+          </div>
           </section>
+        </div>
       </main>
-      <footer class="footer-page-index">
+      <footer class="footer-page">
         <section class="information">
-          <h2 class="visually-hidden">Контактные данные</h2>
+          <h2 class="visually-hidden" hidden>Контактные данные</h2>
           <ul class="footer-socials">
             <li class="footer-socials-items"><a class="social" href="https://vk.com/htmlacademy"><img src="images/footer/Vk.svg" width="24" height="14" alt="Иконка Вконтакте">
-              <span class="visually-hidden">Вконтакте</span>
+              <span class="visually-hidden" hidden>Вконтакте</span>
             </a>
           </li>
             <li class="footer-socials-items"><a class="social" href="https://t.me/htmlacademy"><img src="images/footer/Telegram.svg" width="18" height="15,1" alt="Иконка Телеграмм">
-              <span class="visually-hidden">Телеграмм</span>
+              <span class="visually-hidden" hidden>Телеграмм</span>
             </a>
             </li>
             <li class="footer-socials-items"><a class="social" href="https://www.youtube.com/user/htmlacademyru"><img src="images/footer/YouTube.svg" width="22" height="17" alt="Иконка Ютуб">
-              <span class="visually-hidden">Ютуб</span>
+              <span class="visually-hidden" hidden>Ютуб</span>
             </a>
             </li>
           </ul>
-          <address><a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a></address>
+          <address class="phone"><a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a></address>
           <a href="#" class="HTML-academy-link"><img class="HTML-academy-emblem" src="images/footer/HTML Academy.svg" width="114,9" height="32,9" alt="Эмблема HTML-academy"></a>
 
         </section>
