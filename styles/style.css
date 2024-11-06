@@ -413,11 +413,12 @@ ul{
     background-color: #507994;
     color: #FFF;
     background-image: url(../images/catalog/filters.jpg);
+    background-size: cover;
     font-weight: 700;
     background-repeat: no-repeat;
     width: 1200px;
-    height: 412px;
     margin: 0 auto;
+    padding: 35px 0 70px;
 }
 .parametrs-header{
     width: 1060px;
@@ -429,6 +430,9 @@ ul{
 }
 .breadcrumbs{
     display: flex;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 40px;
 }
 .breadcrumbs-link{
     font-weight: 400;
@@ -445,13 +449,16 @@ ul{
 .parametrs-title{
     padding: 0;
     margin: 0;
+    margin-bottom: 8px;
     font-size: 60px;
     line-height: 78px;
 }
 .parametr-minititle{
     font-size: 20px;
     line-height: 24px;
+    margin-bottom: 32px;
 }
+
 .infastructure-block{
     margin: 0;
     padding: 0;
@@ -468,16 +475,20 @@ ul{
     width: 150px;
     margin-right: 140px;
 }
+.types-label{
+    width: 150px;
+}
 .types{
     margin:0;
     padding: 0;
 }
 .cost{
     width: 288px;
+    margin-right: 70px;
 }
 .parametr-items{
-    margin-right: auto;
-    width: 100px;
+    margin-bottom: 16px;
+    width: 150px;
     font-size:18px;
     line-height: 23px;
     font-weight: 400;
