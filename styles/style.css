@@ -34,6 +34,22 @@ body {
     margin: 0 auto;
     background-color:#FFF;
 }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+ul{
+    margin: 0;
+    list-style-type: none;
+}
 .page-container{
     width: 1200px;
     margin: 0 auto;
@@ -50,10 +66,18 @@ body {
     width:1060px;
     margin: 0 auto;
 }
-
-.navigation-link{
+.navigation-list{
+    display: flex;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
+    max-width:624px;
+}
+
+.navigation-link{
+    display: block;
+    /* margin: 0; */
+    padding: 20px 16px;
     font-size:20px;
     line-height: 24px;
     font-weight: 700;
@@ -61,18 +85,26 @@ body {
     color:#000;
     background-color: #FFF;
     text-decoration: none;
-    width: 140px;
-    margin-right: 28px;
+    /* width: 140px; */
 }
-
-.navigation-list{
-    margin: 0;
+.logo-image{
+    display: block;
     padding: 0;
-    width:339px;
+    margin-right: 28px;
+    height: 64px;
+}
+.logo{
+    position: relative;
 }
 .navigation-user{
+    margin: 0;
+    padding: 0;
+    display: flex;
     max-width: 268px;
     margin-left: auto;
+}
+.icons{
+    padding: 22px 12px;
 }
 .button{
     background-color: #756157;
@@ -83,25 +115,22 @@ body {
     text-decoration: none;
     color: #FFF;
     text-transform: uppercase;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 0;
 }
-.action-button{
-    color:#FFF;
+.action{
     background-color:rgba(130, 179, 211, 1) ;
     font-size: 20px;
-    font-weight: 700;
     line-height: 36px;
-    text-align: center;
-    text-transform: uppercase;
 }
 .background-button{
-    color: #FFF;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 700;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
     background-color: transparent;
+}
+.icons-btn{
+    display: block;
+    margin: 14px 0 14px 20px;
+    width: 160px;
 }
 .page-container {
     width: 1200px;
@@ -118,6 +147,8 @@ body {
 .welcome{
     display: block;
     margin: 0 auto;
+    padding-top: 51px;
+
 }
 .advantages-title{
     font-size:30px;
@@ -129,7 +160,7 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     width:620px;
-    margin: 0 auto;
+    margin: 70px auto 25px;
 }
 .advantages-reasons{
     font-size:22px;
@@ -141,6 +172,7 @@ body {
     text-decoration: none;
     width:651px;
     margin: 0 auto;
+    margin-bottom: 90px;
 }
 .advantages-list{
     display: flex;
@@ -150,12 +182,13 @@ body {
 .advatages-item{
     display:flex;
     padding: 0;
+    margin: 0;
     flex-direction: column;
     text-align: center;
     color:#000;
     background-color:rgba(131, 179, 211, 0.12);
     text-decoration: none;
-    height:385px;
+    max-height:385px;
     width: 400px;
 }
 .bright{
@@ -167,8 +200,9 @@ body {
     width:1200px;
 }
 .item-text{
+    padding: 102px 85px;
     flex-direction: column;
-    width: 400px;
+    width: 230px;
 }
 .advantages-list{
     padding: 0;
@@ -178,10 +212,14 @@ body {
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
+    margin-bottom: 62px;
 }
 .advantages{
     font-size: 18px;
     line-height: 21px;
+}
+.advantages-item{
+    height: 400px;
 }
 .comfort{
     text-align: center;
@@ -190,6 +228,9 @@ body {
     color: #000;
     background-color: rgba(255, 255, 255, 1);
 }
+.comfort-header{
+    padding: 64px 0;
+}
 .comfort-title{
     font-size: 30px;
     line-height: 36px;
@@ -197,6 +238,7 @@ body {
     text-transform: uppercase;
     margin: 0 auto;
     width:505px;
+    margin-bottom: 20px;
 }
 .comfort-first-information{
     color:#333;
@@ -213,7 +255,8 @@ body {
 .comfort-item{
     background-color:#FFF;
     width: 400px;
-    height: 385px;
+    max-height: 385px;
+    padding: 81px 85px;
 }
 
 .comfort-article{
@@ -227,6 +270,7 @@ body {
     color: #333;
     font-size: 18px;
     line-height: 21px;
+    text-align: center;
 }
 .center{
     text-align: center;
@@ -236,28 +280,32 @@ body {
 }
 .want-search{
     margin: 0 auto;
+    padding: 96px 0;
     text-align: center;
     text-decoration: none;
-    font-weight: 400;
     color: #000;
     background-color: rgba(255, 255, 255, 1);
     width: 592px;
-    height: 214px;
+
 }
 .want-search-title{
+    margin: 0;
     font-size: 30px;
     font-weight: 700;
     line-height: 36px;
     text-transform: uppercase;
+    margin-bottom: 20px;
 }
 .want-search-first-information{
     color: #333;
     font-size: 22px;
     line-height: 26px;
+    margin-bottom: 54px;
 }
 .want-search-link{
     font-size: 20px;
     line-height: 36px;
+    padding: 8px 50px;
 }
 .subscribe{
     color: #FFF;
@@ -272,16 +320,21 @@ body {
 }
 .subsribe-filling{
     margin: 0 auto;
+    padding-top: 96px;
     width: 684px;
     height: 215px;
 }
 .subscribe-title{
+    margin: 0;
+    margin-bottom: 20px;
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
 }
 .subscribe-information{
+    margin: 0;
+    margin-bottom: 54px;
     font-size: 22px;
     line-height: 26px;
 }
@@ -292,6 +345,8 @@ body {
     line-height: 24px;
     height: 52px;
     width:452px;
+    border: none;
+    border-radius: 4px 0 0 4px;
 }
 .subscribe-form{
     display: flex;
@@ -306,9 +361,9 @@ body {
     text-decoration: none;
 }
 .information{
+    margin: 40px auto 30px;
     display: flex;
     width: 1060px;
-    margin: 0 auto;
 }
 .footer-socials{
     padding: 0;
@@ -427,9 +482,17 @@ body {
     line-height: 23px;
     font-weight: 400;
 }
+.hotels-btn{
+    display: flex;
+    flex-direction: column;
+}
 .use{
     font-size: 16px;
+    text-align: center;
     line-height: 20px;
+    width:191px;
+    padding: 8px 50px;
+    margin-bottom: 40px;
 }
 .result-of-search{
     font-size: 30px;
@@ -491,6 +554,7 @@ body {
     background-color: #7DB54F;
     font-size:16px;
     line-height: 20px;
+    padding: 8px 18px;
 }
 .pagination{
     padding: 0;
@@ -506,6 +570,7 @@ body {
     width: 60px;
     margin-right:8px ;
     background-color: #82B3D3;
+    border-radius: 4px;
 }
 
 .pagination-link{
@@ -527,6 +592,6 @@ body {
     background-color: #82B3D3;
 }
 .subscr{
-    height:52px;
     width:232px;
+    border-radius: 0 4px 4px 0;
 }
