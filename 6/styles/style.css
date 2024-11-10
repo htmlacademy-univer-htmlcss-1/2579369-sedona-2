@@ -368,14 +368,15 @@ ul{
     padding: 0;
     margin: 0;
     display: flex;
+    flex-wrap: wrap;
     margin-right: 42px;
+    max-width: 350px;
 }
 .footer-socials-items{
     padding: 13px;
 
 }
 .phone{
-    width: 720px;
     margin: 0 auto;
 }
 .footer-contacts-address-phone{
@@ -506,6 +507,28 @@ ul{
     padding: 8px 50px;
     margin-bottom: 40px;
 }
+.cost-variable{
+    display: flex;
+    flex-direction: row;
+}
+.min-max-cost{
+    width: 143px;
+    background-color: #F2F2F2;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    height: 48px;
+    border: none;
+    margin-right: 2px;
+    padding-left: 20px;
+}
+.min{
+    border-radius: 4px 0 0 4px;
+}
+.max{
+    border-radius: 0 4px 4px 0;
+}
+
 .result-of-search{
     font-size: 30px;
     line-height: 36px;

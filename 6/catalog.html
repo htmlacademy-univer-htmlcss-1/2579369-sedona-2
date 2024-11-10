@@ -49,7 +49,7 @@
                     <li class="breadcrumbs-items"><a class="breadcrumbs-link">Гостиницы</a></li>
                 </ul>
               </div>
-              <div class="parametrs-choose">
+              <form class="parametrs-choose" action="https://echo.htmlacademy.ru/" method="get">
                 <fieldset class="infastructure-block">
                 <legend class="parametr-minititle ">Инфаструктура</legend>
                 <ul class="infastructure">
@@ -70,13 +70,16 @@
             </fieldset>
                 <section class="cost">
                     <h3 class="parametr-minititle">Стоимость, ₽:</h3>
-
-                </section>
+                    <div class="cost-variable">
+                    <input class="min-max-cost min" type="text" id="min-cost" name="min-cost" value="0">
+                    <input class="min-max-cost max" type="text" id="max-cost" name="max-cost" value="9000">
+                    </div>
+                  </section>
               <div class="hotels-btn">
                 <button class="button action use" type="submit">Применить</button>
                 <button class="button background-button" type="submit">Сбросить</button>
               </div>
-              </div>
+            </form>
             </section>
         </header>
 
