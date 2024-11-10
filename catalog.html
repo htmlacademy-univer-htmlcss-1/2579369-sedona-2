@@ -9,29 +9,29 @@
   <body>
     <header class="page-header">
       <nav class="navigation">
-        <a class="navigation-link">
-          <img class="logo image" src="images/header/logo.svg" height="64" width="138" alt="Лого Седоны"></a>
+        <a class="navigation-link logo-image">
+          <img class="logo" src="images/header/logo.svg" height="70" width="138" alt="Лого Седоны"></a>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a href="#" class="navigation-link">Главная</a></li>
+            <a href="#" class="navigation-link icons">Главная</a></li>
           <li class="navigation-item">
-            <a href="#" class="navigation-link">О седоне</a></li>
+            <a href="#" class="navigation-link icons">О седоне</a></li>
           <li class="navigation-item">
-            <a href="#" class="navigation-link">Гостиницы</a></li>
+            <a href="#" class="navigation-link icons">Гостиницы</a></li>
         </ul>
 
-        <ul class="navigation-list navigation-user">
-          <li class="navigation-item"><a href="#" class="navigation-link">
+        <ul class=" navigation-user">
+          <li class="navigation-item "><a href="#" class="navigation-link">
             <span class="visually-hidden">
             Поиск
           </span>
-          <img src="images/header/search.svg" class="navigation-image" alt="поиск"></a></li>
+          <img src="images/header/search.svg" width="20" height="20" class="navigation-image" alt="поиск"></a></li>
           <li class="navigation-item"><a href="#" class="navigation-link"><span class="visually-hidden">
             Понравившиеся
           </span>
-          <img src="images/header/heart.svg" class="navigation-image" alt="понравившиеся"></a></li>
+          <img src="images/header/heart.svg" width="20" height="20" class="navigation-image" alt="понравившиеся"></a></li>
           <li class="navigation-item">
-            <button type="button" class="button">
+            <button type="button" class="button icons-btn">
             Хочу сюда!
             </button></li>
         </ul>
@@ -39,7 +39,7 @@
     </header>
       <main class="main-catalog">
         <div class="page-container">
-        <header><h1 class="visually-hidden" hidden>Каталог гостиниц</h1>
+        <header><h1 class="visually-hidden">Каталог гостиниц</h1>
             <section class="parametrs">
               <div class="parametrs-header">
                 <h2 class="parametrs-title">Гостиницы Седоны</h2>
@@ -48,7 +48,7 @@
                     <li class="breadcrumbs-items"><a class="breadcrumbs-link">Гостиницы</a></li>
                 </ul>
               </div>
-              <div class="parametrs-choose">
+              <form class="parametrs-choose" action="https://echo.htmlacademy.ru/" method="get">
                 <fieldset class="infastructure-block">
                 <legend class="parametr-minititle ">Инфаструктура</legend>
                 <ul class="infastructure">
@@ -69,12 +69,16 @@
             </fieldset>
                 <section class="cost">
                     <h3 class="parametr-minititle">Стоимость, ₽:</h3>
-
-                </section>
-
-                <button class="action-button use" type="submit">Применить</button>
-                <button class="background-button" type="submit">Сбросить</button>
+                    <div class="cost-variable">
+                    <input class="min-max-cost min" type="text" id="min-cost" name="min-cost" value="0">
+                    <input class="min-max-cost max" type="text" id="max-cost" name="max-cost" value="9000">
+                    </div>
+                  </section>
+              <div class="hotels-btn">
+                <button class="button action use" type="submit">Применить</button>
+                <button class="button background-button" type="submit">Сбросить</button>
               </div>
+            </form>
             </section>
         </header>
 
@@ -106,8 +110,8 @@
                     <p class="card-information">Гостиница</p>
                     <p class="card-information">От 4000 ₽</p>
                 </a>
-                <a class="button" href="#">подробнее</a>
-                <button class="action-button choose" type="submit">в избранное</button>
+                <a class="button more" href="#">подробнее</a>
+                <button class="button action choose" type="submit">в избранное</button>
                 <section class="hotel-rate">
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
@@ -125,8 +129,8 @@
                     <p class="card-information">Гостиница</p>
                     <p class="card-information">От 5000 ₽</p>
                 </a>
-                <a class="button" href="#">подробнее</a>
-                <button class="action-button choosen" type="submit">в избранном</button>
+                <a class="button more" href="#">подробнее</a>
+                <button class="button action choosen" type="submit">в избранном</button>
                 <section class="hotel-rate">
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
@@ -144,8 +148,8 @@
                     <p class="card-information">Гостиница</p>
                     <p class="card-information">От 2500 ₽</p>
                 </a>
-                <a class="button" href="#">подробнее</a>
-                <button class="action-button choose" type="submit">в избранное</button>
+                <a class="button more" href="#">подробнее</a>
+                <button class="button action choose" type="submit">в избранное</button>
                 <section class="hotel-rate">
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
@@ -163,8 +167,8 @@
                     <p class="card-information">Гостиница</p>
                     <p class="card-information">От 1500 ₽</p>
                 </a>
-                <a class="button" href="#">подробнее</a>
-                <button class="action-button choose" type="submit">в избранное</button>
+                <a class="button more" href="#">подробнее</a>
+                <button class="button action choose" type="submit">в избранное</button>
                 <section class="hotel-rate">
                     <span class="fa fa-star checked"></span>
                     <span class="fa fa-star checked"></span>
@@ -223,7 +227,7 @@
             <p class="subscribe-information">Только полезная информация и никакого спама, честное бойскаутское!</p>
             <form class="subscribe-form"  action="https://echo.htmlacademy.ru/" method="get">
               <input class="email" name="email" type="email" value="Ваш e-mail">
-              <button class="action-button subscr" type="submit">Подписаться</button>
+              <button class="button action subscr" type="submit">Подписаться</button>
             </form>
           </div>
           </section>
@@ -231,18 +235,18 @@
       </main>
       <footer class="footer-page">
         <section class="information">
-          <h2 class="visually-hidden" hidden>Контактные данные</h2>
+          <h2 class="visually-hidden" >Контактные данные</h2>
           <ul class="footer-socials">
             <li class="footer-socials-items"><a class="social" href="https://vk.com/htmlacademy"><img src="images/footer/Vk.svg" width="24" height="14" alt="Иконка Вконтакте">
-              <span class="visually-hidden" hidden>Вконтакте</span>
+              <span class="visually-hidden" >Вконтакте</span>
             </a>
           </li>
             <li class="footer-socials-items"><a class="social" href="https://t.me/htmlacademy"><img src="images/footer/Telegram.svg" width="18" height="15,1" alt="Иконка Телеграмм">
-              <span class="visually-hidden" hidden>Телеграмм</span>
+              <span class="visually-hidden" >Телеграмм</span>
             </a>
             </li>
             <li class="footer-socials-items"><a class="social" href="https://www.youtube.com/user/htmlacademyru"><img src="images/footer/YouTube.svg" width="22" height="17" alt="Иконка Ютуб">
-              <span class="visually-hidden" hidden>Ютуб</span>
+              <span class="visually-hidden">Ютуб</span>
             </a>
             </li>
           </ul>
