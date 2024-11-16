@@ -867,6 +867,9 @@ ul{
     background-color: #82B3D3;
 
 }
+.pagination-link:last-child{
+    padding:12px 28px 12px 20px;
+}
 .pagination-link:hover{
     background-color: rgba(104, 162, 202, 1);
 }
