@@ -669,6 +669,15 @@ ul{
     display: flex;
     flex-direction: row;
 }
+.wrapper{
+    position: relative;
+}
+.custom-placeholder{
+    position:absolute;
+    color:rgba(0, 0, 0, 0.3);
+    left: 106px;
+    top: 12px;
+}
 .min-max-cost{
     width: 123px;
     background-color: #F2F2F2;
@@ -680,10 +689,6 @@ ul{
     margin-right: 2px;
     padding-left: 20px;
     margin-bottom: 36px;
-}
-.min-max-cost::placeholder{
-    margin-left:103px;
-    padding-right: auto;
 }
 .min-max-cost:focus{
     outline: solid 3px rgba(131, 179, 211, 1);
