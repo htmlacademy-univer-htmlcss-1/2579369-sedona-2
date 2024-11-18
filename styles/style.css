@@ -670,7 +670,7 @@ ul{
     flex-direction: row;
 }
 .min-max-cost{
-    width: 143px;
+    width: 123px;
     background-color: #F2F2F2;
     font-size: 18px;
     line-height: 24px;
@@ -679,6 +679,7 @@ ul{
     border: none;
     margin-right: 2px;
     padding-left: 20px;
+    margin-bottom: 36px;
 }
 .min-max-cost::placeholder{
     margin-left:103px;
@@ -693,7 +694,36 @@ ul{
 .max{
     border-radius: 0 4px 4px 0;
 }
-
+.range-scale {
+    position: relative;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+.range-bar{
+    position: absolute;
+    height: 4px;
+    background-color: #FFF;
+}
+.range-toggle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+.range-toggle:focus{
+    outline: solid 3px #82B3D3;
+}
+.range-toggle:active{
+    outline: solid 2px #82B3D3;
+}
+.toggle-min,
+.toggle-max{
+    top: -8px;
+    left: -10px;
+  }
 .result-of-search{
     font-size: 30px;
     line-height: 36px;
