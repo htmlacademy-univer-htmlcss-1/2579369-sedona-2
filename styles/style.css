@@ -675,7 +675,7 @@ ul{
 .custom-placeholder{
     position:absolute;
     color:rgba(0, 0, 0, 0.3);
-    left: 106px;
+    right: 20px;
     top: 12px;
 }
 .min-max-cost{
