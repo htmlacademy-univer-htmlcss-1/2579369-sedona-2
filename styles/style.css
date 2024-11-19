@@ -1083,6 +1083,13 @@ ul{
   border:4px;
   border-radius: 4px;
  }
+ .date-form:hover{
+    background-color:rgba(230, 230, 230, 1) ;
+ }
+ .date-form:focus{
+    background-color:rgba(230, 230, 230, 1) ;
+    outline:solid 3px #82B3D3;
+ }
  .field{
   opacity: 0;
   position:absolute
@@ -1105,6 +1112,13 @@ ul{
     background-color:rgba(242, 242, 242, 1);
     border-radius: 4px;
     box-sizing: border-box;
+ }
+ .form-wrapper:hover{
+    background-color: rgba(230, 230, 230, 1);
+ }
+ .form-wrapper:focus{
+    background-color: rgba(230, 230, 230, 1);
+    outline: solid 3px #82B3D3;
  }
  .custom-btn{
   fill:#756157;
