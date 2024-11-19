@@ -963,6 +963,7 @@ ul{
     background-color: #ffffff;
     border-radius:30px ;
     padding: 64px 70px ;
+    width: 580px;
   }
   .booking-title{
     font-weight: 700;
@@ -971,9 +972,6 @@ ul{
     text-transform: uppercase;
     margin:0;
     margin-bottom: 64px;
-  }
-  .modal-booking{
-    width:580px;
   }
 .modal-close-button{
     position: absolute;
@@ -1004,6 +1002,7 @@ ul{
     background-image: url("../images/modal/cross-active.svg");
     background-repeat: no-repeat;
     background-position: center;
+
 }
 .booking-form-grid{
     display:grid;
@@ -1028,6 +1027,7 @@ ul{
     background-repeat: no-repeat;
     background-position: top 14px right 20px;
     cursor: pointer;
+    opacity: 0.5;
 }
 .booking-form-field{
    grid-column: span 2;
@@ -1130,11 +1130,10 @@ ul{
 }
 .form-minus{
     position:absolute;
-    bottom: 20px;
+    bottom: 17px;
     left: 13px;
     color: rgba(117, 97, 87, 0.3);
     font-size: 20px;
-    line-height: 20px;
     cursor: pointer;
 }
 .input-text{
