@@ -1026,20 +1026,21 @@ ul{
     background-image: url(../images/modal/calendar.svg);
     background-repeat: no-repeat;
     background-position: top 14px right 20px;
-    cursor: pointer;
     opacity: 0.5;
+    z-index: 0;
 }
 .booking-form-field{
    grid-column: span 2;
    font-weight: 700;
    font-size: 18px;
    line-height: 24px;
-   width:420px;
+   width:400px;
    padding:12px 0 12px 20px;
    background-color: rgba(242, 242, 242, 1);
    border-radius: 4px;
    border:none;
    opacity: 1;
+   z-index: 1;
 }
 .booking-text{
    font-weight: 700;
@@ -1123,7 +1124,6 @@ ul{
  .custom-btn{
   fill:#756157;
   fill-opacity:0.3;
-  cursor: pointer;
  }
 .field-amount{
     text-align: center;
@@ -1140,7 +1140,6 @@ ul{
     color: rgba(117, 97, 87, 0.3);
     font-size: 20px;
     line-height: 20px;
-    cursor: pointer;
 }
 .form-minus{
     position:absolute;
@@ -1148,7 +1147,6 @@ ul{
     left: 13px;
     color: rgba(117, 97, 87, 0.3);
     font-size: 20px;
-    cursor: pointer;
 }
 .input-text{
     position: relative;
